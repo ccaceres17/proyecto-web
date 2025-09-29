@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AutoCare - Workshop Landing</title>
+
+  <!-- Google Font (opcional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/style.css">
+
+  <!-- SEO/meta -->
+  <meta name="description" content="AutoCare - Professional auto workshop landing page.">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#"><img src="img/logo.png" alt="AutoCare logo" /></a>
+
+      <button id="btnHamburger" class="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <h1 class="hero-title">AutoCare - Your trusted car workshop</h1>
+      <p class="hero-sub">Professional maintenance, diagnostics and 24/7 emergency service</p>
+      <div class="hero-ctas">
+        <a class="btn primary" href="#services">Our Services</a>
+        <a class="btn ghost" href="#contact">Request Appointment</a>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <span class="count" data-target="15">0</span>
+          <span class="label">Years</span>
+        </div>
+        <div class="stat">
+          <span class="count" data-target="1200">0</span>
+          <span class="label">Customers</span>
+        </div>
+        <div class="stat">
+          <span class="count" data-target="4">0</span>
+          <span class="label">Locations</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="section-title fade-in">Our Services</h2>
+      <div class="services-grid">
+        <article class="service-card fade-in">
+          <div class="service-icon"></div>
+          <h3>General Mechanics</h3>
+          <p>Engine, transmission, brakes and suspension repair.</p>
+        </article>
+        <article class="service-card fade-in">
+          <div class="service-icon"></div>
+          <h3>Maintenance</h3>
+          <p>Oil changes, filter services and routine checks.</p>
+        </article>
+        <article class="service-card fade-in">
+          <div class="service-icon"></div>
+          <h3>Diagnostics</h3>
+          <p>Computerized scanning and electronic systems diagnosis.</p>
+        </article>
+        <article class="service-card fade-in">
+          <div class="service-icon"></div>
+          <h3>Electrical System</h3>
+          <p>Alternators, batteries and lighting system repairs.</p>
+        </article>
+        <article class="service-card fade-in">
+          <div class="service-icon"></div>
+          <h3>Tires</h3>
+          <p>Mounting, balancing and alignments.</p>
+        </article>
+        <article class="service-card fade-in">
+          <div class="service-icon"></div>
+          <h3>Emergency</h3>
+          <p>24/7 towing and roadside assistance.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="pricing">
+    <div class="container">
+      <h2 class="section-title fade-in">Pricing</h2>
+      <div class="pricing-grid">
+        <div class="pricing-item fade-in">
+          <h3>Basic Maintenance</h3>
+          <div class="price">$45,000</div>
+          <ul>
+            <li>Oil change</li>
+            <li>Oil filter</li>
+            <li>Basic inspection</li>
+          </ul>
+        </div>
+        <div class="pricing-item fade-in">
+          <h3>Full Service</h3>
+          <div class="price">$85,000</div>
+          <ul>
+            <li>Full maintenance</li>
+            <li>Brake inspection</li>
+            <li>Computer scan</li>
+          </ul>
+        </div>
+        <div class="pricing-item fade-in">
+          <h3>Advanced Diagnostics</h3>
+          <div class="price">$35,000</div>
+          <ul>
+            <li>Full scan</li>
+            <li>Detailed report</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title fade-in">Contact Us</h2>
+      <div class="contact-content">
+        <div class="contact-info fade-in">
+          <h3>Contact Information</h3>
+          <p><strong>Address:</strong><br>45th Street #123-45, Barranquilla</p>
+          <p><strong>Phone:</strong><br>+57 5 987 6543</p>
+          <p><strong>Email:</strong><br>info@autocare.com.co</p>
+        </div>
+        <div class="contact-form fade-in">
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-row">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-row">
+              <label for="vehicle">Vehicle (make & model)</label>
+              <input type="text" id="vehicle" name="vehicle" placeholder="e.g. Toyota Corolla 2020">
+            </div>
+            <div class="form-row">
+              <label for="service">Service required</label>
+              <select id="service" name="service" required>
+                <option value="">Choose a service</option>
+                <option value="maintenance">Maintenance</option>
+                <option value="repair">Repair</option>
+                <option value="diagnostics">Diagnostics</option>
+                <option value="emergency">Emergency</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <div class="form-row">
+              <button type="submit" class="btn primary">Request appointment</button>
+            </div>
+            <div id="formMessage" class="form-message" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h4>AutoCare</h4>
+        <p>Your trusted auto repair shop with over 15 years of experience.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#services">General Mechanics</a>
+        <a href="#services">Maintenance</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>+57 5 987 6543</p>
+      </div>
+    </div>
+    <div class="copyright">&copy; 2025 AutoCare. All rights reserved.</div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button id="btnScrollTop" class="scroll-top" title="Back to top">↑</button>
+
+  <!-- JS -->
+  <script src="js/script.js" defer></script>
+</body>
+</html>
